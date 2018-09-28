@@ -1,15 +1,5 @@
 <template>
-<el-card class="box-card">
-  <el-row>
-    <el-col :span="8">
-      <h3>离线工具</h3>
-    </el-col>
-    <el-col :span="16" style="text-align:right">
-        <el-button icon="el-icon-minus" circle size="mini"></el-button>
-        <el-button type="success" icon="el-icon-plus" circle size="mini"></el-button>
-        <el-button type="danger" icon="el-icon-close" circle size="mini"></el-button>
-    </el-col>
-  </el-row>
+<div>
   <el-row>
     <el-col :span="24">
       <codemirror v-model="code" :options="cmOption"></codemirror>
@@ -21,8 +11,7 @@
       <el-button size="small">净化(<u>P</u>urify)</el-button>
     </el-col>
   </el-row>
-</el-card>
-
+</div>
 </template>
 
 <script>
@@ -67,7 +56,7 @@ import "codemirror/addon/fold/xml-fold.js";
 export default {
   data() {
     return {
-      code: "const i = 1;",
+      code: "const i = 1;alert(0);document.write('');",
       cmOption: {
         tabSize: 4,
         styleActiveLine: false,
