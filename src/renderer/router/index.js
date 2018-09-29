@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'line-textarea',
-      component: require('@/components/LineTextArea').default
+      component: require('@/components/JavaScriptTool').default
     },
     {
       path: '*',
