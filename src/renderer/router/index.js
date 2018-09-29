@@ -6,14 +6,19 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/test',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      path: '/',
+      name: 'home-page',
+      component: require('@/components/HomePage').default
     },
     {
-      path: '/',
-      name: 'line-textarea',
+      path: '/js',
+      name: 'javascript-tool',
       component: require('@/components/JavaScriptTool').default
+    },
+    {
+      path: '/json',
+      name: 'json-tool',
+      component: require('@/components/JsonTool').default
     },
     {
       path: '*',

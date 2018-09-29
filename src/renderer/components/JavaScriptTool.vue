@@ -23,8 +23,6 @@
       <el-col :span="24">
         <el-button size="small" @click="handleBeautify">美化(
           <u>B</u>eautify)</el-button>
-        <el-button size="small" @click="handleCompress">压缩(
-          <u>C</u>ompress)</el-button>
         <el-button size="small" @click="handleMangle">混淆(
           <u>M</u>angle)</el-button>
         <el-button size="small" @click="handleMinify">最小化(
@@ -93,38 +91,22 @@ var jstool = new Inote.JSTool();
       }
     },
     methods: {
-      initialize() {
-        // this.editor = CodeMirror.fromTextArea();
-      },
       handleBeautify() {
         var totalLines = this.editor.codemirror.lineCount();
         this.editor.codemirror.autoFormatRange({line:0, ch:0}, {line:totalLines});
       },
       handleMinify(){
-        var result = UglifyJS.minify(this.code,{});
-        this.code = result.code;
+        this.code = UglifyJS.minify(this.code,{
+          mangle: false
+        }).code;
       },
-      handleCompress(){
-        var result = UglifyJS.compress(this.code,{});
-        this.code = result.code;
-      }
-    },
-    mounted() {
-      // this.initialize()
-    },
+      handleMangle(){
+        this.code = UglifyJS.minify(this.code).code;
+      },
+    }
   };
 </script>
 
 <style>
-.CodeMirror-focused .cm-matchhighlight {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFklEQVQI12NgYGBgkKzc8x9CMDAwAAAmhwSbidEoSQAAAABJRU5ErkJggg==);
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-.cm-matchhighlight {
-  background-color: lightgreen;
-}
-.CodeMirror-selection-highlight-scrollbar {
-  background-color: green;
-}
+.CodeMirror{height:600px !important;;}
 </style>
