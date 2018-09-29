@@ -108,5 +108,5 @@ var jstool = new Inote.JSTool();
 </script>
 
 <style>
-.CodeMirror{height:600px !important;;}
+.CodeMirror{height:500px !important;;}
 </style>
