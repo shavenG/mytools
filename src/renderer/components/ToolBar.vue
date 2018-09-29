@@ -1,11 +1,11 @@
 <template>
-<div style="margin:10px;">
-  <el-row>
+<el-card class="box-card">
+  <el-row style="height:50px; line-height:45px;border:1px solid red;">
     <el-col :span="4">
       <el-button-group>
-        <el-button type="danger" icon="el-icon-close" circle size="mini"></el-button>        
-        <el-button type="success" icon="el-icon-plus" circle size="mini"></el-button>
         <el-button icon="el-icon-minus" circle size="mini"></el-button>
+        <el-button type="success" icon="el-icon-plus" circle size="mini"></el-button>
+        <el-button type="danger" icon="el-icon-close" circle size="mini"></el-button>
       </el-button-group>
     </el-col>
     <el-col :span="10">
@@ -21,7 +21,13 @@
       </div>
     </el-col>
   </el-row>
-</div>
+  <el-row>
+    <el-col :span="24">
+      <el-button size="small" @click="handleBeautify">美化(<u>B</u>eautify)</el-button>
+      <el-button size="small">净化(<u>P</u>urify)</el-button>
+    </el-col>
+  </el-row>
+</el-card>
 
 </template>
 
