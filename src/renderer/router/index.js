@@ -21,6 +21,11 @@ export default new Router({
       component: require('@/components/JsonTool').default
     },
     {
+      path: '/sql',
+      name: 'sql-tool',
+      component: require('@/components/SqlTool').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
