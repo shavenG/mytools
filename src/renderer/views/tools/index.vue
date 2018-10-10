@@ -1,15 +1,15 @@
 <template>
-    <div class="music-index">
+    <div class="index">
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="所有" name="javascript"></el-tab-pane>
             <el-tab-pane label="开发类" name="json"></el-tab-pane>
             <el-tab-pane label="站长类" name="sql"></el-tab-pane>
-            <!-- <el-tab-pane label="极客类" name="hacker"></el-tab-pane>
+            <el-tab-pane label="极客类" name="hacker"></el-tab-pane>
             <el-tab-pane label="其它" name="playlist"></el-tab-pane>
             <el-tab-pane label="奇淫巧技" name="ys"></el-tab-pane>
-            <el-tab-pane label="网址导航" name="szzj"></el-tab-pane> -->
+            <el-tab-pane label="网址导航" name="szzj"></el-tab-pane>
         </el-tabs>
-        <div class="music-body">
+        <div class="index-body">
             <transition name="el-fade-in-linear">
                 <javascript v-if="activeName==='javascript'" />
                 <json v-if="activeName==='json'" />
@@ -43,7 +43,8 @@
     }
 </script>
 <style lang="scss" scoped>
-    .music-index {
+    .card{width:100%;height:100%;}
+    .index {
         display: flex;
         overflow: hidden;
         flex: 1;
@@ -67,7 +68,7 @@
                 font-size: 14px;
             }
         }
-        .music-body {
+        .index-body {
             background: #f0f0f0;
             flex: 1;
             overflow: hidden;

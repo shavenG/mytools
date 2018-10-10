@@ -1,5 +1,5 @@
 <template>
-    <el-card class="box-card" style="margin:20px;">
+    <el-card class="card">
         <el-row>
             <el-col :span="11">
                 <div ref="codeEditor" class="editor"></div>
@@ -67,10 +67,13 @@ export default {
 </script>
 
 <style>
+.card{width:100%;height:100%;}
+
 .editor{
-    height: 500px;
+    height: 600px !important;
     overflow: auto;
 }
+
 /* reset styling (prevent conflicts with bootstrap, materialize.css, etc.) */
 
 div.jsoneditor .jsoneditor-search input {

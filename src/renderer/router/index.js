@@ -12,30 +12,23 @@ export default new Router({
       component: require('@/views/main').default,
       children: [
         {
+          path: 'index',
+          name: 'index',
+          component: () => import('../views/tools/index.vue')
+        },{
           path: 'js',
           name: 'js',
-          component: () => import('@/components/JavaScriptTool')
+          component: () => import('../views/tools/javascript')
         }, {
           path: 'json',
           name: 'json',
-          component: () => import('@/components/JsonTool')
+          component: () => import('../views/tools/json')
+        },{
+          path: 'sql',
+          name: 'sql',
+          component: () => import('../views/tools/sql')
         }
       ]
-    },
-    {
-      path: '/js',
-      name: 'javascript-tool',
-      component: require('@/components/JavaScriptTool').default
-    },
-    {
-      path: '/json',
-      name: 'json-tool',
-      component: require('@/components/JsonTool').default
-    },
-    {
-      path: '/sql',
-      name: 'sql-tool',
-      component: require('@/components/SqlTool').default
     },
     {
       path: '*',

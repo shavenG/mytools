@@ -1,8 +1,8 @@
 <template>
-  <el-card class="FullScreen">
+  <el-card class="card">
     <el-row>
       <el-col :span="24">
-        <codemirror ref="myEditor" v-model="code" :options="cmOption" class="FullScreen"></codemirror>
+        <codemirror ref="myEditor" v-model="code" :options="cmOption" class="card"></codemirror>
       </el-col>
     </el-row>
     <el-row style="margin:10px 0;">
@@ -94,6 +94,6 @@ var jstool = new Inote.JSTool();
 </script>
 
 <style>
-.FullScreen{width:100%;height:100%;}
+.card{width:100%;height:100%;}
 .CodeMirror{width:100%;height:100% !important;}
 </style>

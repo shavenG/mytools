@@ -2,6 +2,9 @@
     <div class="header-view" :style="{height: height}">
         <div class="left flex-c-l">
             <el-button class="no-drag" size="mini" type="text" @click="back">
+                <i class="btn el-icon-menu"></i>
+            </el-button>
+            <el-button class="no-drag" size="mini" type="text" @click="back">
                 <i class="btn el-icon-arrow-left"></i>
             </el-button>
             <el-button class="no-drag" size="mini" type="text" @click="advance">
@@ -12,7 +15,7 @@
             </el-button>
 
             <div class="search no-drag">
-                <el-input size="mini" prefix-icon="el-icon-search" placeholder="搜索音乐、MV、歌单、用户"></el-input>
+                <el-input size="mini" prefix-icon="el-icon-search" placeholder="搜索其实很简单"></el-input>
             </div>
         </div>
         <div class="right">
@@ -37,7 +40,7 @@
         },
         methods: {
             close() {
-                this.$confirm('此操作将退出土狗云音乐, 是否继续?', '提示', {
+                this.$confirm('退出星火燎原工具箱, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'

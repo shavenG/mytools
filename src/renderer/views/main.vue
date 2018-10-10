@@ -2,9 +2,6 @@
     <div>
         <el-container class="container" id="main">
             <el-container style="position: relative;">
-                <!-- <el-aside width="200px" class="aside">
-                    <aside-view />
-                </el-aside> -->
                 <el-container >
                     <el-header class="header" height="50px" style="-webkit-app-region: drag">
                         <header-view height="50px" />
@@ -17,9 +14,6 @@
                     </el-main>
                 </el-container>
             </el-container>
-            <!-- <el-footer class="footer" height="70px">
-                <footer-view height="70px" />
-            </el-footer> -->
         </el-container>
         <login-view />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <el-card class="box-card" style="margin:20px;">
+  <el-card class="card">
     <el-row>
       <el-col :span="24">
         <codemirror ref="myEditor" v-model="code" :options="cmOption"></codemirror>
