@@ -1,22 +1,8 @@
 <template>
-  <el-card class="box-card" style="margin:20px;">
-    <!-- <el-row>
-      <el-col :span="4">
-        <el-button-group>
-          <el-button type="danger" icon="el-icon-close" circle size="mini"></el-button>
-          <el-button type="success" icon="el-icon-plus" circle size="mini"></el-button>
-          <el-button icon="el-icon-minus" circle size="mini"></el-button>
-        </el-button-group>
-      </el-col>
-      <el-col :span="10">
-        <el-input v-model="input" placeholder="请输入内容" size="mini"></el-input>
-      </el-col>
-      <el-col :span="10" style="-webkit-app-region: drag">
-      </el-col>
-    </el-row> -->
+  <el-card class="FullScreen">
     <el-row>
       <el-col :span="24">
-        <codemirror ref="myEditor" v-model="code" :options="cmOption"></codemirror>
+        <codemirror ref="myEditor" v-model="code" :options="cmOption" class="FullScreen"></codemirror>
       </el-col>
     </el-row>
     <el-row style="margin:10px 0;">
@@ -108,5 +94,6 @@ var jstool = new Inote.JSTool();
 </script>
 
 <style>
-.CodeMirror{height:500px !important;;}
+.FullScreen{width:100%;height:100%;}
+.CodeMirror{width:100%;height:100% !important;}
 </style>

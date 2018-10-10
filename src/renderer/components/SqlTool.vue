@@ -65,5 +65,5 @@ DELETE FROM table1 WHERE NOT EXISTS (SELECT * FROM table2 WHERE table1.field1=ta
 </script>
 
 <style>
-.CodeMirror{height:500px !important;;}
+.CodeMirror{width:100%;height:100% !important;}
 </style>

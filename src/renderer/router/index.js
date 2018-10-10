@@ -7,8 +7,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home-page',
-      component: require('@/components/HomePage').default
+      name: 'home',
+      redirect: { name: 'js' },
+      component: require('@/views/main').default,
+      children: [
+        {
+          path: 'js',
+          name: 'js',
+          component: () => import('@/components/JavaScriptTool')
+        }, {
+          path: 'json',
+          name: 'json',
+          component: () => import('@/components/JsonTool')
+        }
+      ]
     },
     {
       path: '/js',
