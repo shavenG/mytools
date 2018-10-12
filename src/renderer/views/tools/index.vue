@@ -1,10 +1,10 @@
 <template>
     <div class="index">
         <el-tabs v-model="activeName" @tab-click="handleClick">
-            <el-tab-pane label="所有" name="javascript"></el-tab-pane>
+            <el-tab-pane label="所有" name="all"></el-tab-pane>
             <el-tab-pane label="开发类" name="json"></el-tab-pane>
             <el-tab-pane label="站长类" name="sql"></el-tab-pane>
-            <el-tab-pane label="极客类" name="hacker"></el-tab-pane>
+            <el-tab-pane label="极客类" name="javascript"></el-tab-pane>
             <el-tab-pane label="其它" name="playlist"></el-tab-pane>
             <el-tab-pane label="奇淫巧技" name="ys"></el-tab-pane>
             <el-tab-pane label="网址导航" name="szzj"></el-tab-pane>
@@ -14,6 +14,7 @@
                 <javascript v-if="activeName==='javascript'" />
                 <json v-if="activeName==='json'" />
                 <sql v-if="activeName==='sql'" />
+                <list :data="tools" />
             </transition>
         </div>
     </div>
@@ -22,18 +23,29 @@
     import javascript from './javascript'
     import json from './json'
     import sql from './sql'
+    
+    import list from './list'
+    import tools from './tools.json'
+
     export default {
         components: {
             javascript,
             json,
-            sql
+            sql,
+            list
         },
         data() {
             return {
-                activeName: 'choiceness'
+                tools: [],
+                activeName: 'all'
             }
         },
         mounted() {
+            Object.keys(tools).forEach(element => {
+                if( tools[element]['children'].length > 0 ){
+                    
+                }
+            });
         },
         methods: {
             handleClick() {

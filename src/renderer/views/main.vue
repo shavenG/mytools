@@ -15,21 +15,14 @@
                 </el-container>
             </el-container>
         </el-container>
-        <login-view />
     </div>
 </template>
 <script>
-    import AsideView from '../components/Aside/'
     import HeaderView from '../components/Header/'
-    import FooterView from '../components/Footer/'
-    import LoginView from '../components/Login/'
 
     export default {
         components: {
-            AsideView,
-            HeaderView,
-            FooterView,
-            LoginView
+            HeaderView
         }
     }
 </script>

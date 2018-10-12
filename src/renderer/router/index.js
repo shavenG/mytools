@@ -8,7 +8,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      redirect: { name: 'js' },
+      redirect: { name: 'index' },
       component: require('@/views/main').default,
       children: [
         {
