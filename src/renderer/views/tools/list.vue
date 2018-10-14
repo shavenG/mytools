@@ -1,23 +1,13 @@
 <template>
-    <el-row :gutter="24">
-        <el-col :span="6">
-            <el-card shadow="always">
-                总是显示
-            </el-card>
-        </el-col>
-        <el-col :span="6">
-            <el-card shadow="hover">
-                鼠标悬浮时显示
-            </el-card>
-        </el-col>
-        <el-col :span="6">
-            <el-card shadow="never">
-                从不显示
-            </el-card>
-        </el-col>
-        <el-col :span="6">
-            <el-card shadow="never">
-                从不显示
+    <el-row style="width:100%">
+        <el-col :span="6" v-for="obj in data" :key="obj.name">
+            <el-card shadow="always" style="margin:10px;">
+                <div slot="header" class="clearfix">
+                    <i class="el-icon-news"></i>
+                    <span>{{ obj.name }}</span>
+                    <a style="float: right; padding: 3px 0" type="text">[ 开发类 ]</a>
+                </div>
+                {{ obj.descript }}
             </el-card>
         </el-col>
     </el-row>
@@ -26,9 +16,9 @@
 <script>
 export default {
   props: ["data"],
-  mounted(){
-      console.log("this.data");
-      console.log(this.data);
+  mounted() {
+    console.log("this.data");
+    console.log(this.data);
   }
 };
 </script>

@@ -36,16 +36,17 @@
         },
         data() {
             return {
-                tools: [],
+                tools: tools,
                 activeName: 'all'
             }
         },
         mounted() {
-            Object.keys(tools).forEach(element => {
-                if( tools[element]['children'].length > 0 ){
-                    
-                }
-            });
+            // Object.keys(tools).forEach(element => {
+            //     console.error(tools[element]);
+            //     if( tools[element]['children'].length > 0 ){
+            //         this.tools = this.tools.concat(tools[element]['children']);
+            //     }
+            // });
         },
         methods: {
             handleClick() {

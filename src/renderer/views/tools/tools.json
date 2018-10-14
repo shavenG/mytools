@@ -2,7 +2,7 @@
     "developer": {
         "name": "开发类",
         "category": "developer",
-        "childrens": [
+        "children": [
             {
                 "name": "javascript 工具",
                 "descript": "在线js美化、解压缩、混淆",
@@ -20,10 +20,38 @@
                 "descript": "sql在线美化，格式化，压缩",
                 "path": "sql",
                 "url": "https://tool.soxiazai.com/sql"
+            },
+            {
+                "name": "json 工具",
+                "descript": "在线编辑json，语法检查，转php,go类",
+                "path": "json",
+                "url": "https://tool.soxiazai.com/json"
+            },
+            {
+                "name": "sql 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "sql",
+                "url": "https://tool.soxiazai.com/sql"
+            },
+            {
+                "name": "json 工具",
+                "descript": "在线编辑json，语法检查，转php,go类",
+                "path": "json",
+                "url": "https://tool.soxiazai.com/json"
+            },
+            {
+                "name": "sql 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "sql",
+                "url": "https://tool.soxiazai.com/sql"
             }
         ]
     },
     "webmaster": {
-        
+        "name": "站长类",
+        "category": "webmaster",
+        "children":[
+            
+        ]
     }
 }
