@@ -6,52 +6,86 @@
             {
                 "name": "javascript 工具",
                 "descript": "在线js美化、解压缩、混淆",
-                "path": "javascript",
+                "path": "/js",
                 "url": "https://tool.soxiazai.com/js"
             },
             {
                 "name": "json 工具",
-                "descript": "在线编辑json，语法检查，转php,go类",
-                "path": "json",
+                "descript": "在线编辑json",
+                "path": "/json",
                 "url": "https://tool.soxiazai.com/json"
             },
             {
                 "name": "sql 工具",
                 "descript": "sql在线美化，格式化，压缩",
-                "path": "sql",
+                "path": "/sql",
                 "url": "https://tool.soxiazai.com/sql"
+            },
+            {
+                "name": "html 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/html",
+                "url": "https://tool.soxiazai.com/html"
+            },
+            {
+                "name": "css 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/css",
+                "url": "https://tool.soxiazai.com/css"
             },
             {
                 "name": "json 工具",
-                "descript": "在线编辑json，语法检查，转php,go类",
-                "path": "json",
+                "descript": "在线编辑json",
+                "path": "/json",
                 "url": "https://tool.soxiazai.com/json"
             },
             {
                 "name": "sql 工具",
                 "descript": "sql在线美化，格式化，压缩",
-                "path": "sql",
+                "path": "/sql",
                 "url": "https://tool.soxiazai.com/sql"
             },
             {
-                "name": "json 工具",
-                "descript": "在线编辑json，语法检查，转php,go类",
-                "path": "json",
-                "url": "https://tool.soxiazai.com/json"
-            },
-            {
-                "name": "sql 工具",
+                "name": "html 工具",
                 "descript": "sql在线美化，格式化，压缩",
-                "path": "sql",
-                "url": "https://tool.soxiazai.com/sql"
+                "path": "/html",
+                "url": "https://tool.soxiazai.com/html"
+            },
+            {
+                "name": "css 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/css",
+                "url": "https://tool.soxiazai.com/css"
             }
         ]
     },
     "webmaster": {
         "name": "站长类",
         "category": "webmaster",
-        "children":[
-            
+        "children":[{
+                "name": "json 工具",
+                "descript": "在线编辑json",
+                "path": "/json",
+                "url": "https://tool.soxiazai.com/json"
+            },
+            {
+                "name": "sql 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/sql",
+                "url": "https://tool.soxiazai.com/sql"
+            },
+            {
+                "name": "html 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/html",
+                "url": "https://tool.soxiazai.com/html"
+            },
+            {
+                "name": "css 工具",
+                "descript": "sql在线美化，格式化，压缩",
+                "path": "/css",
+                "url": "https://tool.soxiazai.com/css"
+            }
         ]
     }
 }

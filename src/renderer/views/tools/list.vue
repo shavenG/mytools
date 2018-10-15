@@ -1,15 +1,22 @@
 <template>
     <el-row style="width:100%">
-        <el-col :span="6" v-for="obj in data" :key="obj.name">
-            <el-card shadow="always" style="margin:10px;">
-                <div slot="header" class="clearfix">
-                    <i class="el-icon-news"></i>
-                    <span>{{ obj.name }}</span>
-                    <a style="float: right; padding: 3px 0" type="text">[ 开发类 ]</a>
-                </div>
-                {{ obj.descript }}
-            </el-card>
-        </el-col>
+        <div v-for="obj in data" :key="obj.name">
+            <el-col :span="6" v-for="o in obj.children" :key="o.name">
+                <el-card shadow="always" style="margin:10px;">
+                    <div slot="header" class="clearfix">
+                        <router-link :to="{ path: o.path }">
+                            <el-button icon="el-icon-news" type="text">【{{ obj.name }} 】{{ o.name }}</el-button>                              
+                        </router-link>
+                    </div>
+                    <div class="text item">
+                        {{ o.descript }}
+                    </div>  
+                    <div class="text item">
+                        <span>{{ o.url }}</span>
+                    </div>  
+                </el-card>
+            </el-col>
+        </div>
     </el-row>
 </template>
 
@@ -24,7 +31,10 @@ export default {
 </script>
 
 <style>
-
+    * {font-size: 14px;}
+    .item {
+        margin-bottom: 18px;
+    }
 </style>
 
 

@@ -2,8 +2,8 @@
     <div class="index">
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="所有" name="all"></el-tab-pane>
-            <el-tab-pane label="开发类" name="json"></el-tab-pane>
-            <el-tab-pane label="站长类" name="sql"></el-tab-pane>
+            <el-tab-pane label="开发类" name="developer"></el-tab-pane>
+            <el-tab-pane label="站长类" name="webmaster"></el-tab-pane>
             <el-tab-pane label="极客类" name="javascript"></el-tab-pane>
             <el-tab-pane label="其它" name="playlist"></el-tab-pane>
             <el-tab-pane label="奇淫巧技" name="ys"></el-tab-pane>
@@ -11,27 +11,17 @@
         </el-tabs>
         <div class="index-body">
             <transition name="el-fade-in-linear">
-                <javascript v-if="activeName==='javascript'" />
-                <json v-if="activeName==='json'" />
-                <sql v-if="activeName==='sql'" />
                 <list :data="tools" />
             </transition>
         </div>
     </div>
 </template>
-<script>
-    import javascript from './javascript'
-    import json from './json'
-    import sql from './sql'
-    
+<script>    
     import list from './list'
     import tools from './tools.json'
 
     export default {
         components: {
-            javascript,
-            json,
-            sql,
             list
         },
         data() {
@@ -41,16 +31,13 @@
             }
         },
         mounted() {
-            // Object.keys(tools).forEach(element => {
-            //     console.error(tools[element]);
-            //     if( tools[element]['children'].length > 0 ){
-            //         this.tools = this.tools.concat(tools[element]['children']);
-            //     }
-            // });
+
         },
         methods: {
             handleClick() {
-
+                let activeName = this.activeName;
+                this.tools = activeName == 'all' ? tools : {activeName : tools[activeName] };
+                console.error(this.tools);
             }
         }
     }
@@ -84,7 +71,7 @@
         .index-body {
             background: #f0f0f0;
             flex: 1;
-            overflow: hidden;
+            overflow: auto;
             display: flex;
         }
     }

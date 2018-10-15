@@ -27,6 +27,14 @@ export default new Router({
           path: 'sql',
           name: 'sql',
           component: () => import('../views/tools/sql')
+        },{
+          path: 'html',
+          name: 'html',
+          component: () => import('../views/tools/html')
+        },{
+          path: 'css',
+          name: 'css',
+          component: () => import('../views/tools/css')
         }
       ]
     },
