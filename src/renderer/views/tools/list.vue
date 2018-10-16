@@ -5,11 +5,12 @@
                 <el-card shadow="always" style="margin:10px;">
                     <div slot="header" class="clearfix">
                         <router-link :to="{ path: o.path }">
-                            <el-button icon="el-icon-news" type="text">【{{ obj.name }} 】{{ o.name }}</el-button>                              
+                            <el-button icon="el-icon-news" type="text">【{{ obj.name }}】{{ o.name }}</el-button>
                         </router-link>
+                        <el-tag type="danger" size="mini" v-if="o.online == 'yes'">online</el-tag>     
                     </div>
                     <div class="text item">
-                        {{ o.descript }}
+                        <span>{{ o.descript }}</span>
                     </div>  
                     <div class="text item">
                         <span>{{ o.url }}</span>
@@ -31,8 +32,10 @@ export default {
 </script>
 
 <style>
-    * {font-size: 14px;}
+    * {font-size: 14px; font-family: 'Courier New', 'Microsoft yahei';}
     .item {
+        overflow: hidden;
+        white-space: nowrap;
         margin-bottom: 18px;
     }
 </style>

@@ -35,6 +35,10 @@ export default new Router({
           path: 'css',
           name: 'css',
           component: () => import('../views/tools/css')
+        },{
+          path: 'useragent',
+          name: 'useragent',
+          component: () => import('../views/tools/useragent')
         }
       ]
     },

@@ -4,10 +4,11 @@
             <el-tab-pane label="所有" name="all"></el-tab-pane>
             <el-tab-pane label="开发类" name="developer"></el-tab-pane>
             <el-tab-pane label="站长类" name="webmaster"></el-tab-pane>
-            <el-tab-pane label="极客类" name="javascript"></el-tab-pane>
-            <el-tab-pane label="其它" name="playlist"></el-tab-pane>
-            <el-tab-pane label="奇淫巧技" name="ys"></el-tab-pane>
-            <el-tab-pane label="网址导航" name="szzj"></el-tab-pane>
+            <el-tab-pane label="极客类" name="geek"></el-tab-pane>
+            <el-tab-pane label="维护类" name="devops"></el-tab-pane>
+            <el-tab-pane label="其它" name="other"></el-tab-pane>
+            <el-tab-pane label="奇淫巧技" name="interesting"></el-tab-pane>
+            <el-tab-pane label="网址导航" name="webnavigate"></el-tab-pane>
         </el-tabs>
         <div class="index-body">
             <transition name="el-fade-in-linear">
@@ -37,7 +38,6 @@
             handleClick() {
                 let activeName = this.activeName;
                 this.tools = activeName == 'all' ? tools : {activeName : tools[activeName] };
-                console.error(this.tools);
             }
         }
     }

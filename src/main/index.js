@@ -24,7 +24,7 @@ function createWindow () {
     height: 760,
     transparent: true,
     useContentSize: true,
-    width: 1000,
+    width: 1100,
     titleBarStyle: 'hiddenInset '
   })
 

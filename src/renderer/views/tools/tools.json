@@ -34,28 +34,16 @@
                 "url": "https://tool.soxiazai.com/css"
             },
             {
-                "name": "json 工具",
-                "descript": "在线编辑json",
-                "path": "/json",
-                "url": "https://tool.soxiazai.com/json"
+                "name": "useragent 分析",
+                "descript": "分析ua",
+                "path": "/useragent",
+                "url": "https://tool.soxiazai.com/useragent"
             },
             {
-                "name": "sql 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/sql",
-                "url": "https://tool.soxiazai.com/sql"
-            },
-            {
-                "name": "html 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/html",
-                "url": "https://tool.soxiazai.com/html"
-            },
-            {
-                "name": "css 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/css",
-                "url": "https://tool.soxiazai.com/css"
+                "name": "剪贴板魔术师",
+                "descript": "剪贴板增强工具",
+                "path": "/clipmagic",
+                "url": "https://tool.soxiazai.com/clipmagic"
             }
         ]
     },
@@ -63,29 +51,67 @@
         "name": "站长类",
         "category": "webmaster",
         "children":[{
-                "name": "json 工具",
-                "descript": "在线编辑json",
-                "path": "/json",
-                "url": "https://tool.soxiazai.com/json"
+                "name": "ip 查询",
+                "descript": "查询指定IP或域名服务器的物理地址",
+                "online": "yes",
+                "path": "/ip",
+                "url": "https://tool.soxiazai.com/ip"
             },
             {
-                "name": "sql 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/sql",
-                "url": "https://tool.soxiazai.com/sql"
+                "name": "dns 查询",
+                "descript": "dns 查询",
+                "path": "/dns",
+                "url": "https://tool.soxiazai.com/dns"
             },
             {
-                "name": "html 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/html",
-                "url": "https://tool.soxiazai.com/html"
+                "name": "whois 查询",
+                "descript": "查询域名的详细信息",
+                "online": "yes",
+                "path": "/whois",
+                "url": "https://tool.soxiazai.com/whois"
             },
             {
-                "name": "css 工具",
-                "descript": "sql在线美化，格式化，压缩",
-                "path": "/css",
-                "url": "https://tool.soxiazai.com/css"
+                "name": "ping 工具",
+                "descript": "多个地点Ping服务器",
+                "path": "/ping",
+                "url": "https://tool.soxiazai.com/ping"
             }
         ]
+    },
+    "geek": {
+        "name": "极客类",
+        "category": "geek",
+        "children": [{
+            "name": "端口扫描",
+            "descript": "扫描端口是否开放",
+            "online": "yes",
+            "path": "/portscan",
+            "url": "https://tool.soxiazai.com/portscan"
+        }]
+    },
+    "devops": {
+        "name": "维护类",
+        "category": "devops",
+        "children": [{
+            "name": "批量替换",
+            "descript": "批量替换服务器上的文件",
+            "path": "/breplace",
+            "url": "https://tool.soxiazai.com/breplace"
+        }]
+    },
+    "other": {
+        "name": "其它",
+        "category": "other",
+        "children": [{
+            "name": "计算器",
+            "descript": "计算器",
+            "path": "/calculator",
+            "url": "https://tool.soxiazai.com/calculator"
+        },{
+            "name": "万年历",
+            "descript": "万年历",
+            "path": "/calendar",
+            "url": "https://tool.soxiazai.com/calendar"
+        }]
     }
 }

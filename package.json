@@ -33,6 +33,7 @@
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
     "uglify-js": "^3.4.9",
+    "useragent": "^2.3.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",
