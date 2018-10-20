@@ -1,5 +1,5 @@
 <template>
-    <list :data="tools"></list>
+  <list :data="tools"></list>
 </template>
 <script>
 import list from "./list";
@@ -15,25 +15,33 @@ export default {
     };
   },
   watch: {
-    '$route' (to, from) {
-        console.log(to);
-        console.log(from);
-      let activeName = to.query.activeName || "all";
-      this.tools = (activeName == "all") ? tools : { activeName: tools[activeName] };
+    $route(to, from) {
+      console.log("#### search");
+      let kw = to.query.kw || "";
+      if ("" != kw) {
+        let result = [];
+        Object.keys(tools).forEach(function(key) {
+          let childrens = tools[key].children;
+          console.log(childrens);
+          childrens.forEach(function(obj) {
+            if (obj.name.indexOf(kw) > -1 || obj.descript.indexOf(kw) > -1) {
+              result.push(obj);
+            }
+          });
+        });
+
+        this.tools = {
+          search: {
+            name: "搜索",
+            children: result
+          }
+        };
+      } else {
+        let activeName = to.query.activeName || "all";
+        this.tools = (activeName == "all") ? tools : { activeName: tools[activeName] };
+      }
     }
-  },
-//   created() {
-//       let activeName = this.$route.query.activeName || "all";
-//       this.tools = (activeName == "all") ? tools : { activeName: tools[activeName] };
-//       console.log("index.vue");
-//       console.log(this.$route.query);
-//   },
-//   mounted(){
-//       let activeName = this.$route.query.activeName || "all";
-//       this.tools = (activeName == "all") ? tools : { activeName: tools[activeName] };
-//       console.log("index.vue");
-//       console.log(this.$route.query);
-//   }
+  }
 };
 </script>
 <style lang="scss" scoped>

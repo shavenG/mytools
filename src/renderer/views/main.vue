@@ -46,6 +46,7 @@
         },
         methods: {
             handleClick() {
+                debugger;
                 this.$router.push({
                     path: "/index",
                     query: { activeName: this.activeName }

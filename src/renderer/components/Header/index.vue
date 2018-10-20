@@ -15,7 +15,7 @@
             </el-button>
 
             <div class="search no-drag">
-                <el-input size="mini" prefix-icon="el-icon-search" placeholder="搜索其实很简单"></el-input>
+                <el-input size="mini" prefix-icon="el-icon-search" placeholder="搜索其实很简单" @blur="handleSearch" @keyup.enter.native="handleSearch" v-model="keyword"></el-input>
             </div>
         </div>
         <div class="right">
@@ -32,6 +32,11 @@
 <script>
     const {BrowserWindow} = require('electron')
     export default {
+        data() {
+            return {
+                keyword : ""
+            }
+        },
         props: {
             height: {
                 type: String,
@@ -63,6 +68,12 @@
             },
             refresh() {
                 this.$bus.$emit('page-refresh', this.$route.name)
+            },
+            handleSearch() {
+                this.$router.push({
+                    path: "/index",
+                    query: { kw: this.keyword,activeName: "all" }
+                });
             }
         }
     }
