@@ -39,6 +39,14 @@ export default new Router({
           path: 'useragent',
           name: 'useragent',
           component: () => import('../views/tools/useragent')
+        },{
+          path: 'clipmagic',
+          name: 'clipmagic',
+          component: () => import('../views/tools/clipmagic')
+        },{
+          path: 'calculator',
+          name: 'calculator',
+          component: () => import('../views/tools/calculator')
         }
       ]
     },
