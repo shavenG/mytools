@@ -44,6 +44,42 @@
                 "descript": "剪贴板增强工具",
                 "path": "clipmagic",
                 "url": "https://tool.soxiazai.com/clipmagic"
+            },
+            {
+                "name": "php 工具",
+                "descript": "在线php美化、格式化、解密",
+                "path": "php",
+                "url": "https://tool.soxiazai.com/php"
+            },
+            {
+                "name": "正则测试工具",
+                "descript": "正则表达式测试工具，还可以生成代码哦",
+                "path": "regex",
+                "url": "https://tool.soxiazai.com/regex"
+            },
+            {
+                "name": "xml 工具",
+                "descript": "xml格式化、压缩",
+                "path": "xml",
+                "url": "https://tool.soxiazai.com/xml"
+            },
+            {
+                "name": "颜色转换",
+                "descript": "颜色空间转换",
+                "path": "color",
+                "url": "https://tool.soxiazai.com/color"
+            },
+            {
+                "name": "crontab时间计算",
+                "descript": "crontab测试，执行时间计算",
+                "path": "crontab",
+                "url": "https://tool.soxiazai.com/crontab"
+            },
+            {
+                "name": "图片base64编码",
+                "descript": "图片base64编码",
+                "path": "base64image",
+                "url": "https://tool.soxiazai.com/base64image"
             }
         ]
     },
@@ -87,6 +123,16 @@
             "online": "yes",
             "path": "portscan",
             "url": "https://tool.soxiazai.com/portscan"
+        },{
+            "name": "文字加密解密",
+            "descript": "url,base64,md5加密解密",
+            "path": "encdec",
+            "url": "https://tool.soxiazai.com/encdec"
+        },{
+            "name": "摩斯电码",
+            "descript": "摩斯电码编码解码",
+            "path": "morse",
+            "url": "https://tool.soxiazai.com/morse"
         }]
     },
     "devops": {
