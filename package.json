@@ -47,7 +47,7 @@
       "icon": "build/icons/icon.icns"
     },
     "win": {
-      "icon": "build/icons/icon.ico"
+      "icon": "build/icon.ico"
     },
     "linux": {
       "icon": "build/icons"
@@ -65,8 +65,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "runAfterFinish": true,
-      "installerIcon": "./build/icons/icon.ico",
-      "uninstallerIcon": "./build/icons/icon.ico"
+      "installerIcon": "./build/icon.ico",
+      "uninstallerIcon": "./build/icon.ico"
     }
   },
   "dependencies": {
