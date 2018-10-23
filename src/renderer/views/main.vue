@@ -30,6 +30,9 @@
                 </el-container>
             </el-container>
         </el-container>
+        <el-dialog :visible.sync="dialogDownloadProgressVisible" :show-close="showClose" width="170px">
+            <el-progress type="circle" :percentage="downloadPercent"></el-progress>
+        </el-dialog>
     </div>
 </template>
 <script>
@@ -41,7 +44,10 @@
         },
         data() {
             return {
-                activeName: "all"
+                showClose: false,
+                activeName: "all",
+                downloadPercent: 0,
+                dialogDownloadProgressVisible: false
             };
         },
         methods: {
@@ -52,6 +58,26 @@
                     query: { activeName: this.activeName }
                 });
             }
+        },
+        created(){
+            const ipcRenderer = this.$electron.ipcRenderer;
+            ipcRenderer.send("checkForUpdate");
+
+            ipcRenderer.on("message", (event, text) => {
+                console.log(arguments);
+                this.$message(text);
+            });
+            //注意：“downloadProgress”事件可能存在无法触发的问题，只需要限制一下下载网速就好了
+            ipcRenderer.on("downloadProgress", (event, progressObj)=> {
+                console.log(progressObj);
+                this.downloadPercent = progressObj.percent || 0;
+            });
+            ipcRenderer.on("isUpdateNow", () => {
+                ipcRenderer.send("isUpdateNow");
+            });
+        },
+        beforeDestroy(){
+            this.$electron.ipcRenderer.removeAll(["message", "downloadProgress", "isUpdateNow"]);
         }
     };
 </script>

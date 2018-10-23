@@ -45,7 +45,7 @@
         },
         methods: {
             close() {
-                this.$confirm('退出星火燎原工具箱, 是否继续?', '提示', {
+                this.$confirm('退出rewheels工具, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
