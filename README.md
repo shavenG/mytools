@@ -4,7 +4,7 @@
 
 #### 界面
 
-![主界面](https://github.com/shavenG/rewheels/blob/master/static/main.png)
+![主界面](https://raw.githubusercontent.com/shavenG/rewheels/master/static/main.png)
 
 
 #### Build Setup
