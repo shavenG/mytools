@@ -5,6 +5,11 @@
 #### 界面
 
 ![主界面](https://raw.githubusercontent.com/shavenG/rewheels/master/static/main.png)
+![json工具](https://raw.githubusercontent.com/shavenG/rewheels/master/static/json.png)
+
+#### 下载
+
+[win64 安装包下载](https://github.com/shavenG/rewheels/releases/download/0.0.1/rewheels.Setup.0.0.1.exe)
 
 
 #### Build Setup
