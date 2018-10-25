@@ -2,7 +2,10 @@
 
 > 重复造的一堆轮子，日常使用的小工具集合。
 
-#### Release
+#### 界面
+
+![主界面](https://github.com/shavenG/rewheels/blob/master/static/main.png)
+
 
 #### Build Setup
 
@@ -25,6 +28,3 @@ npm run lint
 
 ```
 
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[32ecf6a](https://github.com/SimulatedGREG/electron-vue/tree/32ecf6aebd2e2c28ad2628f151697529e442e679) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
