@@ -1,8 +1,8 @@
-version: 0.0.3
+version: 0.0.4
 files:
-  - url: rewheels Setup 0.0.3.exe
-    sha512: E6e+Y46Jl54pmAD2o4A5ECmE56cukJwu4KcLYovXfTGzIkQx/YHzZP3W1JXlbDLSFmj0bpwK3vylkxWPpjNtPw==
-    size: 44533568
-path: rewheels Setup 0.0.3.exe
-sha512: E6e+Y46Jl54pmAD2o4A5ECmE56cukJwu4KcLYovXfTGzIkQx/YHzZP3W1JXlbDLSFmj0bpwK3vylkxWPpjNtPw==
-releaseDate: '2019-01-01T11:48:52.276Z'
+  - url: rewheels Setup 0.0.4.exe
+    sha512: bi+czWT00VlgnMIus0vO5Aa57xsMrZcNjGKn6B6RjaPTvhUl4leatRBXd/8uU5ZH466mq0on9qyaYpc3+e9ADA==
+    size: 44533115
+path: rewheels Setup 0.0.4.exe
+sha512: bi+czWT00VlgnMIus0vO5Aa57xsMrZcNjGKn6B6RjaPTvhUl4leatRBXd/8uU5ZH466mq0on9qyaYpc3+e9ADA==
+releaseDate: '2019-01-01T11:58:09.419Z'
