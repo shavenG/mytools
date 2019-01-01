@@ -62,7 +62,7 @@ ipcMain.on('minimize',e=>{
 
 // 注意这个autoUpdater不是electron中的autoUpdater
 import { autoUpdater } from "electron-updater"
-const uploadUrl = "https://soxiazai.com/rewheels/";
+const uploadUrl = "https://raw.githubusercontent.com/shavenG/rewheels/master/update";
 
 // 检测更新，在你想要检查更新的时候执行，renderer事件触发后的操作自行编写
 function updateHandle() {

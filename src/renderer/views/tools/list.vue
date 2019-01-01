@@ -4,7 +4,7 @@
                 <el-col :span="6" v-for="o in obj.children" :key="o.name">
                     <el-card shadow="always" style="margin:10px;">
                         <div slot="header" class="clearfix">
-                            <router-link :to="{ path: o.path }">
+                            <router-link :to="{ path: o.path, query:{url:o.url} }">
                             <el-button icon="el-icon-news" type="text">【{{ obj.name }}】{{ o.name }}</el-button>
                             </router-link>
                             <el-tag type="danger" size="mini" v-if="o.online == 'yes'">online</el-tag>
