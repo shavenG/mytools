@@ -143,6 +143,46 @@
             "descript": "批量替换服务器上的文件",
             "path": "breplace",
             "url": "https://tool.soxiazai.com/breplace"
+        },{
+            "name": "CRM3之IPS",
+            "descript": "云计算PAAS基础服务平台",
+            "path": "link",
+            "url": "http://135.32.113.160:8082/"
+        },{
+            "name": "CRM3之HLOG",
+            "descript": "日志查询统计分析",
+            "path": "link",
+            "url": "http://135.32.113.80:9999/hlog-apps/home"
+        },{
+            "name": "CRM3之PINPOINT",
+            "descript": "日志查询统计分析",
+            "path": "link",
+            "url": "http://135.32.113.130:9526/pinpoint-web/"
+        },{
+            "name": "CRM3之CSF",
+            "descript": "服务治理",
+            "path": "link",
+            "url": "http://135.32.113.160:8181/csf_web/"
+        },{
+            "name": "CRM3之ZK",
+            "descript": "zookeeper web manager",
+            "path": "link",
+            "url": "http://135.32.113.160:8182/zk_web/"
+        },{
+            "name": "CRM3之AMC",
+            "descript": "NGINX请求路由",
+            "path": "link",
+            "url": "http://135.32.113.115:8888/amcWeb"
+        },{
+            "name": "CRM3之CMDB",
+            "descript": "配置平台",
+            "path": "link",
+            "url": "http://135.32.113.160:9322"
+        },{
+            "name": "CRM3之UDAL",
+            "descript": "配置平台",
+            "path": "link",
+            "url": "https://135.32.113.63:9994"
         }]
     },
     "other": {

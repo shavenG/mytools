@@ -16,6 +16,10 @@ export default new Router({
           name: 'index',
           component: () => import('../views/tools/index.vue')
         },{
+          path: 'link',
+          name: 'link',
+          component: () => import('../views/tools/link')
+        },{
           path: 'js',
           name: 'js',
           component: () => import('../views/tools/javascript')
