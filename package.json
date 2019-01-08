@@ -1,9 +1,9 @@
 {
-  "name": "rewheels",
-  "productName": "rewheels",
-  "version": "0.0.1",
+  "name": "Rewheels",
+  "productName": "Rewheels",
+  "version": "0.0.4",
   "author": "shaven@163.com",
-  "description": "rewheels 重复造的轮子",
+  "description": "Rewheels 重复造的轮子",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
